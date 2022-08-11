@@ -6,18 +6,16 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Main Menu.unity
-    guid: 67bac458b6f1ab0d8a9519e32d7b6950
-  - enabled: 1
-    path: Assets/Scenes/Data Structure.unity
-    guid: ecfe423d2fe36b787a42ba1521e8241d
-  - enabled: 1
-    path: Assets/Scenes/Electrical.unity
-    guid: 00a16692cf2fe4594b87ee37aa450160
-  - enabled: 1
-    path: Assets/Scenes/Familiarization Resistor.unity
-    guid: e5674980086bc423b94863cdceec82ee
-  - enabled: 1
-    path: Assets/Scenes/Linked List.unity
-    guid: fbdfcefe3372359e997230aec99634de
-  m_configObjects: {}
+    path: Assets/ExampleAssets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 273a486fd4c170c59b209d5e8d77492d,
+      type: 2}
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c5f9469facf3e09a798e946e0606bd82,
+      type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: a46949d6b33853109a4ca4df4d643335,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf4a0de344fa742da8c5c8df97a4acb0,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 02fdbd37acb3cd47d832d4bd1c5b015e,
+      type: 2}
