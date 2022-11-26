@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/ExampleAssets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
-    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 273a486fd4c170c59b209d5e8d77492d,
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5d724249b08f1aa49a624e27533d5551,
       type: 2}
-    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: c5f9469facf3e09a798e946e0606bd82,
+    UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0fbab58851f5eb44b8cf2f55da3a20a2,
       type: 2}
     com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: a46949d6b33853109a4ca4df4d643335,
       type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf4a0de344fa742da8c5c8df97a4acb0,
       type: 2}
-    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 02fdbd37acb3cd47d832d4bd1c5b015e,
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0f291e56acfb5db419c4e69a0123e5b0,
       type: 2}
