@@ -55,10 +55,11 @@ public class BinarySearch : MonoBehaviour
             if(!flag){
                 list[r].Element.GetComponentInChildren<Renderer>().material.color=Color.black;
                 StartCoroutine(move(list[r].Element,list[r].Element.transform.position));
-            
-                
+                text.text = "Found At "+r+" index";
+            } else{
+                text.text = "Pointer Reached the Length";
             }
-            text.text = "Pointer Reached the Length";
+
         }
 
     }

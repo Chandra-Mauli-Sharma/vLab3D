@@ -15,26 +15,10 @@ public class BinarySearchTreeSimulation : MonoBehaviour
     TreeNode presentParent { get; set; }
     public TMP_InputField value;
 
-    void Start()
-    {
-        
-        
-        // var p=bst.Add(new TreeNode(50.ToString(),Instantiate(treeNode, new Vector3(0,0,0), Quaternion.identity)));
-        // bst.Add(new TreeNode(50.ToString(),Instantiate(treeNode, new Vector3(2,-2,0), Quaternion.identity,p.element.transform)));
-        // bst.Add(new TreeNode(50.ToString(),Instantiate(treeNode, new Vector3(-2,-2,0), Quaternion.identity,p.element.transform)));
-        // tree.insert(30);
-        // tree.insert(20);
-        // tree.insert(40);
-        // tree.insert(70);
-        // tree.insert(60);
-        // tree.insert(80);
-
-    }
-
-
     public void AddNode(){
+        bst.Add(bst.Root,new TreeNode(int.Parse(value.text.ToString()),Instantiate(treeNode, new Vector3(-3,0,0), Quaternion.identity,parent.transform)));
 
-        parent=bst.Add(new TreeNode(value.text,Instantiate(treeNode, new Vector3(-3,0,0), Quaternion.identity,parent.transform))).element;
+        // parent=bst.Add().element;
         
         // if(presentParent!=null){
         //     presentParent = bst.Add(new TreeNode(value.text,Instantiate(treeNode, new Vector3(-3,0,0), Quaternion.identity,presentParent.element.transform)));
@@ -42,9 +26,5 @@ public class BinarySearchTreeSimulation : MonoBehaviour
         // } 
         // else presentParent = bst.Add(new TreeNode(value.text,Instantiate(treeNode, new Vector3(-3,0,0), Quaternion.identity)));
         
-    }
-    void Update()
-    {
-
     }
 }

@@ -17,15 +17,11 @@ public class QueueStimulatiom : MonoBehaviour
     {
         
         StartCoroutine(move(posTracker,posTracker.transform.position));
-         queue.Enqueue(new QueueElement(value.text, Instantiate(queueElement, new Vector3(0.95f,0.641f,-11.5f), Quaternion.identity,posTracker.transform)));
-        //  queue.Peek().element.transform.localPosition=new Vector3(0.0f,0.0f,-1.0f);
-        //  posTracker.transform.position += new Vector3(0, 0, 2.0f);
-        // if(queue.Peek().element.transform.position==posTracker.transform.position) StopCoroutine(move(posTracker.transform.position,queue.Peek().element));
+        queue.Enqueue(new QueueElement(value.text, Instantiate(queueElement, new Vector3(0.95f,0.641f,-11.5f), Quaternion.identity,posTracker.transform)));
     }
 
     public void DequeueElement()
     {
-        queue.Peek().element.GetComponent<Rigidbody>().AddForce(new Vector3(0,100,40),ForceMode.Impulse);
         Destroy(queue.Peek().element,2);
         queue.Dequeue();
         posTracker.transform.position -= new Vector3(0, 0.5f, 0);

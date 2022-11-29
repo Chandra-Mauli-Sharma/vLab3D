@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 
 namespace BST
@@ -6,7 +7,7 @@ namespace BST
     {
         public TreeNode LeftNode { get; set; }
         public TreeNode RightNode { get; set; }
-        public string Data { get; set; }
+        public int Data { get; set; }
 
         public GameObject element;
 
@@ -19,10 +20,11 @@ namespace BST
             
         }
 
-        public TreeNode(string value,GameObject element)
+        public TreeNode(int value,GameObject element)
         {
             this.Data = value;
             this.element=element;
+            element.GetComponentInChildren<TMP_Text>().text=value.ToString();
         }
 
     }

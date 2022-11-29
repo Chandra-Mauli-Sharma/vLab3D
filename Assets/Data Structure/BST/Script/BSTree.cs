@@ -4,42 +4,25 @@ using BST;
 class BSTree
 {
     public TreeNode Root { get; set; }
+
+    public BSTree(){
+        Root=null;
+    }
  
-    public TreeNode Add(TreeNode node)
+    public TreeNode Add(TreeNode root,TreeNode node)
     {
-        TreeNode before = null, after = this.Root;
- 
-        while (after != null)
-        {
-            before = after;
-            if (node.Data.CompareTo(after.Data)<0) //Is new TreeNode in left tree? 
-                after = after.LeftNode; 
-            else if (node.Data.CompareTo(after.Data)>0) //Is new TreeNode in right tree?
-                after = after.RightNode;
-            else
-            {
-                //Exist same value
-                return null;
-            }
+
+        if(root==null){
+            root=node;
+            return root;
         }
+
+        if(node.Data<Root.Data)
+            Root.LeftNode=Add(root.LeftNode,node);
+        else if(node.Data>Root.Data)
+            Root.RightNode=Add(root.RightNode,node);
  
-        TreeNode newTreeNode = node;
- 
-        if (this.Root == null)//Tree is empty
-            this.Root = newTreeNode;
-        else
-        {
-            if (node.Data.CompareTo(after.Data)<0){
-                before.LeftNode = newTreeNode;
-                newTreeNode.transform.position=new UnityEngine.Vector3(-2,-2,0);
-            }
-            else{
-                before.RightNode = newTreeNode;
-                newTreeNode.transform.position=new UnityEngine.Vector3(2,-2,0);
-            }
-        }
- 
-        return newTreeNode;
+        return root;
     }
  
     // public TreeNode Find(int value)

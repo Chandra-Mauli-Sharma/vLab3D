@@ -14,12 +14,6 @@ public class Dijkstra : MonoBehaviour
         src = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     int minDistance(int[] dist, bool[] sptSet)
     {
         int min = int.MaxValue, min_index = -1;

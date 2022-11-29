@@ -14,8 +14,6 @@ public class BubbleSort : MonoBehaviour
     int i = 0;
 
     public TMP_InputField value;
-    // public GameObject start;
-    // public GameObject end;
      int j=0;
 
 
