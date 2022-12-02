@@ -4,6 +4,7 @@ using System;
 using UnityEngine;
 using TMPro;
 using LinkedSimulation;
+using UnityEngine.SceneManagement;
 
 public class LinkedListSimulation : MonoBehaviour
 {
@@ -15,6 +16,14 @@ public class LinkedListSimulation : MonoBehaviour
     public GameObject InsertionAlgo;
     public GameObject DeletionAlgo;
 
+    void Update(){
+           if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
+        }
+    }
     public void AddNode()
     {
         loc++;

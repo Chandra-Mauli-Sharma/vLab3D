@@ -6,16 +6,55 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Familiarization Resistor.unity
+    path: Assets/Scenes/Main Menu.unity
+    guid: 67bac458b6f1ab0d8a9519e32d7b6950
+  - enabled: 1
+    path: Assets/Data Structure/Data Structure.unity
+    guid: ecfe423d2fe36b787a42ba1521e8241d
+  - enabled: 1
+    path: Assets/Scenes/Electrical.unity
+    guid: 00a16692cf2fe4594b87ee37aa450160
+  - enabled: 1
+    path: Assets/Scenes/Electronics.unity
+    guid: 64130545e5f7c724fb8198730564669b
+  - enabled: 1
+    path: Assets/Data Structure/Stack/Scene/Stack.unity
+    guid: 56e9511fa22e433ef95c7959d4ef9d26
+  - enabled: 1
+    path: Assets/Data Structure/Binary Search/Scene/Binary Search.unity
+    guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Data Structure/Bubble Sort/Scene/Bubble Sort.unity
+    guid: 8990b5dd4799c134e96a03072569650c
+  - enabled: 1
+    path: Assets/Data Structure/Dijkstra/Scene/Dijkstra.unity
+    guid: 526fda67d0f75bf48983b7502cfeb43d
+  - enabled: 1
+    path: Assets/Data Structure/Linear Search/Scene/Linear Search.unity
+    guid: 0f206ca69135ea74a840a9d56d411394
+  - enabled: 1
+    path: Assets/Data Structure/Linked List/Scene/Linked List.unity
+    guid: fbdfcefe3372359e997230aec99634de
+  - enabled: 1
+    path: Assets/Data Structure/Selection Sort/Scene/Selection Sort.unity
+    guid: 6e5ffb82bcf1529a1bdae13b57db7c2d
+  - enabled: 1
+    path: Assets/Data Structure/Queue/Scene/Queue.unity
+    guid: 075caa81032fc390d869a1dbd4b2e91e
+  - enabled: 1
+    path: Assets/Electronics/Logic Gate/Scene/Logic Gates.unity
+    guid: f82e9a9e3f9de434b91edb57bf455e7f
+  - enabled: 1
+    path: Assets/Electrical/Resistor/Scene/Familiarization Resistor.unity
     guid: e5674980086bc423b94863cdceec82ee
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5d724249b08f1aa49a624e27533d5551,
       type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 0fbab58851f5eb44b8cf2f55da3a20a2,
       type: 2}
-    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: a46949d6b33853109a4ca4df4d643335,
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: 9f4008e1d01aa944d805ef3fc0012b55,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cf4a0de344fa742da8c5c8df97a4acb0,
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c06a9b2a07b32384e8485caa5213bb7c,
       type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 0f291e56acfb5db419c4e69a0123e5b0,
       type: 2}

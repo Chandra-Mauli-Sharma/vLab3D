@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LogicGates : MonoBehaviour
 {
@@ -11,6 +12,15 @@ public class LogicGates : MonoBehaviour
     public GameObject Nor;
     public GameObject Xor;
     GameObject present;
+
+    void Update(){
+        if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Electronics");
+                return;
+            }
+        }
+    }
     public void AndGate(){
         Destroy(present);
         present=Instantiate(And,Vector3.zero,Quaternion.identity);

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Dijkstra : MonoBehaviour
 {
@@ -70,6 +71,15 @@ public class Dijkstra : MonoBehaviour
                         dist[v] = dist[u] + value;
                 }
 
+            }
+        }
+    }
+
+        void Update(){
+        if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
             }
         }
     }

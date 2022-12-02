@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using ArrayStimulator;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SelectionSort : MonoBehaviour
 {
@@ -53,6 +54,14 @@ public class SelectionSort : MonoBehaviour
         }
     }
 
+    void Update(){
+           if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
+        }
+    }
     IEnumerator sorting(Vector3 startPos, Vector3 endPos, int start, int end)
     {
         float journey = 0f;

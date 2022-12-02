@@ -4,6 +4,7 @@ using UnityEngine;
 using ArrayStimulator;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class BinarySearch : MonoBehaviour
 {
@@ -71,6 +72,14 @@ public class BinarySearch : MonoBehaviour
             list.Add(new ArrayElement(int.Parse(value.text.ToString()), Instantiate(arrayElement, Vector3.left*10+j*new Vector3(1.5f,0,0), Quaternion.identity)));
             high=j;
             j++;
+        }
+    }
+        void Update(){
+        if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
         }
     }
 

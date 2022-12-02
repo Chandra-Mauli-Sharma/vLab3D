@@ -4,7 +4,7 @@ using UnityEngine;
 using QueueStimulator;
 using System.IO;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 
 public class QueueStimulatiom : MonoBehaviour
 {
@@ -22,9 +22,9 @@ public class QueueStimulatiom : MonoBehaviour
 
     public void DequeueElement()
     {
-        Destroy(queue.Peek().element,2);
+        Destroy(queue.Peek().element);
         queue.Dequeue();
-        posTracker.transform.position -= new Vector3(0, 0.5f, 0);
+        // posTracker.transform.position -= new Vector3(0, 0f, 1.5f);
     }
 
     IEnumerator move(GameObject present,Vector3 dest){
@@ -38,6 +38,15 @@ public class QueueStimulatiom : MonoBehaviour
 
             if(dest+new Vector3(0,0,1.5f)==present.transform.position) break;
             yield return null;
+        }
+    }
+
+        void Update(){
+        if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
         }
     }
 }

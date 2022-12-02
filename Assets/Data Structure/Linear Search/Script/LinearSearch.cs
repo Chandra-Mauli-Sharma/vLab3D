@@ -4,6 +4,7 @@ using UnityEngine;
 using ArrayStimulator;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LinearSearch : MonoBehaviour
 {
@@ -19,6 +20,14 @@ public class LinearSearch : MonoBehaviour
     public TMP_InputField search;
     public TMP_Text text;
 
+    void Update(){
+           if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
+        }
+    }
     public void Search()
     {
         if (i < list.Count)

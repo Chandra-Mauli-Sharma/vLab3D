@@ -4,6 +4,7 @@ using UnityEngine;
 using StackStimulator;
 using System.IO;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class StackStimulation : MonoBehaviour
 {
@@ -24,5 +25,13 @@ public class StackStimulation : MonoBehaviour
         Destroy(stack.Peek().element,2);
         stack.Pop();
         posTracker.transform.position -= new Vector3(0, 0.5f, 0);
+    }
+    void Update(){
+        if(Application.platform==RuntimePlatform.Android){
+            if(Input.GetKey(KeyCode.Escape)){
+                SceneManager.LoadScene("Data Structure");
+                return;
+            }
+        }
     }
 }

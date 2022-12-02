@@ -12,4 +12,10 @@ public class MainMenuManager : MonoBehaviour
     public void Electrical(){
         SceneManager.LoadScene("Electrical");
     }
+
+    public void Electronics(){
+        SceneManager.LoadScene("Electronics");
+    }
+
+
 }
